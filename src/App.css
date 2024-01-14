@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.App{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--body_background);
+    color: var(--body_text);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    --body_background: rgb(255, 255, 255);
+    --body_color: rgb(0, 0, 0);
+    --body_text: rgb(0, 0, 0);
+    --link_color: navy;
+    --icon_color: rgb(54, 54, 54);
+    --icon_color_hover: rgb(143, 143, 143);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+[data-theme="dark"]{
+    --body_background: #323232;
+    --body_text: white;
+    --body_color: white;
+    --link_color: cyan;
+    --button_color: gray;
+    --icon_color: rgb(255, 255, 255);
+    --icon_color_hover: rgb(199, 199, 199);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wide {
+    width: 300px;
+    margin: auto;
 }
-
-.App-link {
-  color: #61dafb;
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+.link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.link:hover{    
+    opacity: 0.9;
+    color: rgb(89, 89, 89);
+    transition: 0.2s;
+}
+.card_text{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    box-shadow: 5px 5px 10px gray;
+}
+.navbar{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    min-width: 0;
+}
+.button{
+    width: 250px;
+}
+.space{
+    margin:2px 12px;
+}
+.icon{
+    width: 40px;
+    margin-right: 5px;
+    color: var(--icon_color);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.icon:hover{
+    color: var(--icon_color_hover);
+}
+.check:hover{
+    cursor: pointer;
 }

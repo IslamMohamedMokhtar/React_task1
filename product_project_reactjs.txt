@@ -1,0 +1,50 @@
+============================= Product APP (reactjs)======================
+
+in this project we will do a Product app using react js 
+
+====================== system requirments ==========================
+
+1) 4 screens (pages) + a navbar (should be present in every page):
+  
+* home screen : containing all the Products(Product  list component that will display only Products title and price of every Product 
+and every Product component should be having a button "add to cart" and it will add the Product to Cart)  
+*create post product screen: to add a Product (Product : title , discription ,price)
+* Product details : will display all the Product properties when u click on a certain Product and button "delete product"
+* cart: will view all the product added to the cart with a button "empty cart"
+
+2)server to fetch and delete aslo update the Product list with the new Product if added 
+
+==================user stories==========================
+
+1) user should be able to view the Product list in the home screen 
+2)user should be able to view the Product details by clicking on a certain Product 
+3)user should be able to create a new Product 
+4) user should be able to delete a Product from the product list.
+5)user should be able to add product to the cart.
+
+========guides============
+
+1) use the blog app as a reference it contains all the concepts and it is pretty much the same 
+2) the product list is an array of objects every object is a todo with properties title,date,body and id.
+3) create the structure of the app first using components ,jsx and simple css
+4) create the states for every property that you want to display 
+5) create a server to host the products 
+6) use useState and useEffect to fetch the data for display , POST and delete 
+7) make sure to pass the data from parent component to child as a prop if needed
+
+=============================challange==============================================
+
+1)make a second server that will act as a trashcan when user delete a product it goes and be saved in this server 
+so you can access it as a developer if needed but the user will not 
+
+2)smooth redirect and flow is a plus
+
+3)having two themes (light and dark theme option that will change the css accordingly)
+
+
+
+
+
+
+
+
